@@ -8,7 +8,7 @@ function TaskList({tasks}) {
       <h2>Task List</h2>
       <ul>
         {tasks.map(function(task) {
-          return <Task key = {task.id} task = {task}/>;
+          return <Task key = {task.id} task = {task} onDeleteTask={onDeleteTask}/>;
         })}
       </ul>
     </div>
